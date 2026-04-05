@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>利用規約 — Relora</title>
+<title data-i18n-title="terms.meta.title">利用規約 — Relora</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +17,13 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: var(--cream); color: var(--charcoal); font-family: var(--font); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   a { color: var(--primary); }
-  .nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; padding: 12px 32px; background: rgba(247,244,237,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-light); }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 32px;
+    background: rgba(247,244,237,0.88); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-light); gap: 16px;
+  }
   .nav-brand { font-size: 18px; font-weight: 600; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
   .content { max-width: 720px; margin: 0 auto; padding: 64px 32px; }
   .content h1 { font-size: 36px; font-weight: 600; letter-spacing: -0.9px; margin-bottom: 8px; }
@@ -33,59 +39,61 @@
 <nav class="nav"><a class="nav-brand" href="/">Relora</a></nav>
 
 <div class="content">
-  <h1>利用規約</h1>
-  <p class="date">最終更新日: 2026年4月5日</p>
+  <h1 data-i18n="terms.title">利用規約</h1>
+  <p class="date" data-i18n="terms.date">最終更新日: 2026年4月5日</p>
 
-  <p>本利用規約（以下「本規約」）は、Relora（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用になる前に、本規約をよくお読みください。</p>
+  <p data-i18n="terms.intro">本利用規約（以下「本規約」）は、Relora（以下「本アプリ」）の利用条件を定めるものです。本アプリをご利用になる前に、本規約をよくお読みください。</p>
 
-  <h2>1. サービスの内容</h2>
-  <p>本アプリは、チャットのスクリーンショットをAIで分析し、会話の心理分析・返信候補の提案等を行う参考情報提供サービスです。</p>
-  <p>本アプリが提供する情報は、AIによる一般的な傾向に基づく参考情報であり、専門的なカウンセリングやアドバイスではありません。</p>
+  <h2 data-i18n="terms.h1">1. サービスの内容</h2>
+  <p data-i18n="terms.p1a">本アプリは、チャットのスクリーンショットをAIで分析し、会話の心理分析・返信候補の提案等を行う参考情報提供サービスです。</p>
+  <p data-i18n="terms.p1b">本アプリが提供する情報は、AIによる一般的な傾向に基づく参考情報であり、専門的なカウンセリングやアドバイスではありません。</p>
 
-  <h2>2. 免責事項</h2>
+  <h2 data-i18n="terms.h2">2. 免責事項</h2>
   <ul>
-    <li>本アプリの分析結果の正確性、完全性、有用性について保証するものではありません</li>
-    <li>本アプリの利用に基づくいかなる行動の結果についても、開発者は責任を負いません</li>
-    <li>メッセージの送信や行動に関する最終判断は、ユーザー自身の責任において行ってください</li>
-    <li>本アプリは恋愛や人間関係に関する専門的なカウンセリングの代替ではありません</li>
+    <li data-i18n="terms.p2.li1">本アプリの分析結果の正確性、完全性、有用性について保証するものではありません</li>
+    <li data-i18n="terms.p2.li2">本アプリの利用に基づくいかなる行動の結果についても、開発者は責任を負いません</li>
+    <li data-i18n="terms.p2.li3">メッセージの送信や行動に関する最終判断は、ユーザー自身の責任において行ってください</li>
+    <li data-i18n="terms.p2.li4">本アプリは恋愛や人間関係に関する専門的なカウンセリングの代替ではありません</li>
   </ul>
 
-  <h2>3. 利用条件</h2>
+  <h2 data-i18n="terms.h3">3. 利用条件</h2>
   <ul>
-    <li>本アプリは17歳以上の方を対象としています</li>
-    <li>本アプリを違法な目的で使用してはなりません</li>
-    <li>ストーカー行為、ハラスメント、その他他者を害する目的での使用は禁止します</li>
+    <li data-i18n="terms.p3.li1">本アプリは17歳以上の方を対象としています</li>
+    <li data-i18n="terms.p3.li2">本アプリを違法な目的で使用してはなりません</li>
+    <li data-i18n="terms.p3.li3">ストーカー行為、ハラスメント、その他他者を害する目的での使用は禁止します</li>
   </ul>
 
-  <h2>4. 課金について</h2>
+  <h2 data-i18n="terms.h4">4. 課金について</h2>
   <ul>
-    <li>本アプリはApp内課金（サブスクリプション）を提供しています</li>
-    <li>課金はApple Inc.を通じて処理されます</li>
-    <li>サブスクリプションは自動更新されます。更新日の24時間前までにキャンセルしない限り、自動的に更新されます</li>
-    <li>サブスクリプションの管理およびキャンセルは、iOSの設定アプリから行えます</li>
+    <li data-i18n="terms.p4.li1">本アプリはApp内課金（サブスクリプション）を提供しています</li>
+    <li data-i18n="terms.p4.li2">課金はApple Inc.を通じて処理されます</li>
+    <li data-i18n="terms.p4.li3">サブスクリプションは自動更新されます。更新日の24時間前までにキャンセルしない限り、自動的に更新されます</li>
+    <li data-i18n="terms.p4.li4">サブスクリプションの管理およびキャンセルは、iOSの設定アプリから行えます</li>
   </ul>
 
-  <h2>5. 知的財産権</h2>
-  <p>本アプリのデザイン、コード、コンテンツに関する知的財産権は開発者に帰属します。</p>
+  <h2 data-i18n="terms.h5">5. 知的財産権</h2>
+  <p data-i18n="terms.p5">本アプリのデザイン、コード、コンテンツに関する知的財産権は開発者に帰属します。</p>
 
-  <h2>6. サービスの変更・終了</h2>
-  <p>開発者は、事前の通知なく本アプリの機能を変更、または本サービスを終了する権利を有します。</p>
+  <h2 data-i18n="terms.h6">6. サービスの変更・終了</h2>
+  <p data-i18n="terms.p6">開発者は、事前の通知なく本アプリの機能を変更、または本サービスを終了する権利を有します。</p>
 
-  <h2>7. 規約の変更</h2>
-  <p>本規約は予告なく変更される場合があります。変更後の規約は、本ページへの掲載をもって効力を生じます。</p>
+  <h2 data-i18n="terms.h7">7. 規約の変更</h2>
+  <p data-i18n="terms.p7">本規約は予告なく変更される場合があります。変更後の規約は、本ページへの掲載をもって効力を生じます。</p>
 
-  <h2>8. 準拠法・管轄裁判所</h2>
-  <p>本規約は日本法に準拠します。本規約に関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+  <h2 data-i18n="terms.h8">8. 準拠法・管轄裁判所</h2>
+  <p data-i18n="terms.p8">本規約は日本法に準拠します。本規約に関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
 
-  <h2>9. お問い合わせ</h2>
-  <p>本規約に関するお問い合わせは、以下までご連絡ください。</p>
+  <h2 data-i18n="terms.h9">9. お問い合わせ</h2>
+  <p data-i18n="terms.p9">本規約に関するお問い合わせは、以下までご連絡ください。</p>
   <p><a href="mailto:support@relora.app">support@relora.app</a></p>
 </div>
 
 <footer class="footer">
-  <a href="/">ホーム</a>
-  <a href="/privacy.html">プライバシーポリシー</a>
+  <a href="/" data-i18n="terms.nav.home">ホーム</a>
+  <a href="/privacy.html" data-i18n="terms.nav.privacy">プライバシーポリシー</a>
   <div style="margin-top:12px">&copy; 2026 Relora. All rights reserved.</div>
 </footer>
+
+<script src="lang.js"></script>
 </body>
 </html>
