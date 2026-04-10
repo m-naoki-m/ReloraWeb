@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Relora — 恋愛メッセージ分析AI</title>
 <meta name="description" content="ReloraはチャットのスクリーンショットをAIが分析し、相手の心理・温度感・返信候補を提案する恋愛相談アプリです。すべてオンデバイスで完結し、プライバシーを完全に保護します。">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -215,6 +218,11 @@
       <p data-i18n="features.psychology.desc">相手のメッセージの表面的な意味だけでなく、裏にある意図や感情を読み解きます。</p>
     </div>
     <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+      <h3 data-i18n="features.evidence.title">心理学の知見を活用</h3>
+      <p data-i18n="features.evidence.desc">愛着理論やGottman理論など、恋愛心理学の知見をAI分析に活用しています。</p>
+    </div>
+    <div class="card">
       <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
       <h3 data-i18n="features.temperature.title">温度感スコア</h3>
       <p data-i18n="features.temperature.desc">相手の関心度を1〜10のスコアで可視化。感覚ではなくデータで判断できます。</p>
@@ -236,8 +244,8 @@
     </div>
     <div class="card">
       <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-      <h3 data-i18n="features.private.title">完全プライベート</h3>
-      <p data-i18n="features.private.desc">すべてのAI処理はデバイス上で完結。あなたの会話データは一切外部に送信されません。</p>
+      <h3 data-i18n="features.private.title">プライバシー保護</h3>
+      <p data-i18n="features.private.desc">画像はデバイス上でテキスト化。サーバーにはテキストのみ暗号化送信。AIの学習には一切使用されません。</p>
     </div>
   </div>
 </section>
@@ -270,22 +278,22 @@
 <section class="section" id="privacy">
   <div class="privacy-banner">
     <h2 data-i18n="privacy_section.title">あなたのデータは、あなたのもの</h2>
-    <p data-i18n="privacy_section.desc">Reloraはサーバーを一切使いません。すべてのAI処理がiPhone上で完結する、完全ローカル設計です。</p>
+    <p data-i18n="privacy_section.desc">画像はデバイス上で処理。サーバーにはテキストのみ暗号化送信し、分析後即時削除。AIの学習にも使用されません。</p>
     <div class="privacy-points">
       <div class="privacy-point">
         <div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
-        <h4 data-i18n="privacy_section.ondevice.title">オンデバイスAI</h4>
-        <p data-i18n="privacy_section.ondevice.desc">AI処理はすべてあなたのiPhone上で実行</p>
+        <h4 data-i18n="privacy_section.ondevice.title">画像はデバイス内で処理</h4>
+        <p data-i18n="privacy_section.ondevice.desc">スクリーンショットはiPhone上でテキスト化。画像は一切送信されません</p>
       </div>
       <div class="privacy-point">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/><line x1="1" y1="1" x2="23" y2="23"/></svg></div>
-        <h4 data-i18n="privacy_section.nodata.title">データ送信なし</h4>
-        <p data-i18n="privacy_section.nodata.desc">スクショや会話データは外部サーバーに送信されません</p>
+        <h4 data-i18n="privacy_section.nodata.title">暗号化通信・即時削除</h4>
+        <p data-i18n="privacy_section.nodata.desc">テキストのみ暗号化送信。分析完了後サーバーから即時削除されます</p>
       </div>
       <div class="privacy-point">
         <div class="icon"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-        <h4 data-i18n="privacy_section.delete.title">完全削除可能</h4>
-        <p data-i18n="privacy_section.delete.desc">アプリを削除すればすべてのデータが消えます</p>
+        <h4 data-i18n="privacy_section.delete.title">AI学習に不使用</h4>
+        <p data-i18n="privacy_section.delete.desc">あなたのデータはAIの学習に一切使用されません。アプリ削除で端末データも完全消去</p>
       </div>
     </div>
   </div>
@@ -298,27 +306,34 @@
   <h2 class="section-title" style="text-align:center" data-i18n="pricing.title">シンプルな料金プラン</h2>
   <p class="section-desc" style="text-align:center; margin: 0 auto 48px;" data-i18n="pricing.desc">まずは無料でお試しください。</p>
 
-  <div class="pricing-grid">
+  <div class="pricing-grid" style="grid-template-columns: repeat(3, 1fr);">
     <div class="pricing-card">
       <h3 data-i18n="pricing.free.name">無料プラン</h3>
       <div class="price" data-i18n="pricing.free.price">¥0</div>
       <ul class="features">
-        <li data-i18n="pricing.free.f1">1日3回まで分析</li>
-        <li data-i18n="pricing.free.f2">基本的な心理分析</li>
-        <li data-i18n="pricing.free.f3">返信候補の提案</li>
-        <li data-i18n="pricing.free.f4">完全プライバシー保護</li>
+        <li data-i18n="pricing.free.f1">高速AI 使い放題</li>
+        <li data-i18n="pricing.free.f2">心理分析・返信候補</li>
+        <li data-i18n="pricing.free.f3">広告あり</li>
       </ul>
       <a class="btn-ghost" href="#" style="width:100%; text-align:center; display:block;" data-i18n="pricing.free.cta">無料で始める</a>
     </div>
-    <div class="pricing-card featured" data-badge="おすすめ" data-i18n-badge="pricing.premium.badge">
-      <h3 data-i18n="pricing.premium.name">プレミアム</h3>
-      <div class="price" data-i18n-html="pricing.premium.price_html">¥980<span>/月</span></div>
+    <div class="pricing-card featured" data-badge="おすすめ" data-i18n-badge="pricing.standard.badge">
+      <h3 data-i18n="pricing.standard.name">スタンダード</h3>
+      <div class="price" data-i18n-html="pricing.standard.price_html">¥980<span>/月</span></div>
       <ul class="features">
-        <li data-i18n="pricing.premium.f1">無制限の分析</li>
-        <li data-i18n="pricing.premium.f2">深い心理分析・戦略提案</li>
-        <li data-i18n="pricing.premium.f3">相手ごとの記憶・パーソナライズ</li>
-        <li data-i18n="pricing.premium.f4">履歴活用・傾向分析</li>
-        <li data-i18n="pricing.premium.f5">完全プライバシー保護</li>
+        <li data-i18n="pricing.standard.f1">高精度AI 20回/日</li>
+        <li data-i18n="pricing.standard.f2">高速AI 使い放題</li>
+        <li data-i18n="pricing.standard.f3">広告なし</li>
+      </ul>
+      <a class="btn-primary" href="#" style="width:100%; text-align:center; display:block;" data-i18n="pricing.standard.cta">スタンダードを始める</a>
+    </div>
+    <div class="pricing-card">
+      <h3 data-i18n="pricing.premium.name">プレミアム</h3>
+      <div class="price" data-i18n-html="pricing.premium.price_html">¥1,480<span>/月</span></div>
+      <ul class="features">
+        <li data-i18n="pricing.premium.f1">高精度AI 50回/日</li>
+        <li data-i18n="pricing.premium.f2">高速AI 使い放題</li>
+        <li data-i18n="pricing.premium.f3">広告なし</li>
       </ul>
       <a class="btn-primary" href="#" style="width:100%; text-align:center; display:block;" data-i18n="pricing.premium.cta">プレミアムを始める</a>
     </div>
@@ -338,7 +353,7 @@
   <div class="footer-links">
     <a href="privacy.html" data-i18n="footer.privacy">プライバシーポリシー</a>
     <a href="terms.html" data-i18n="footer.terms">利用規約</a>
-    <a href="mailto:support@relora.app" data-i18n="footer.contact">お問い合わせ</a>
+    <a href="mailto:naoki.2002.01.01@gmail.com" data-i18n="footer.contact">お問い合わせ</a>
   </div>
   <div class="footer-copy">&copy; 2026 Relora. All rights reserved.</div>
 </footer>

@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n-title="privacy.meta.title">プライバシーポリシー — Relora</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -40,49 +43,71 @@
 
 <div class="content">
   <h1 data-i18n="privacy.title">プライバシーポリシー</h1>
-  <p class="date" data-i18n="privacy.date">最終更新日: 2026年4月5日</p>
+  <p class="date" data-i18n="privacy.date">最終更新日: 2026年4月10日</p>
 
   <p data-i18n="privacy.intro">Relora（以下「本アプリ」）は、ユーザーのプライバシーを最優先に設計されています。本ポリシーは、本アプリにおける情報の取り扱いについて説明します。</p>
 
   <h2 data-i18n="privacy.h1">1. 基本方針</h2>
-  <p data-i18n="privacy.p1">本アプリは完全オンデバイスで動作します。ユーザーのデータを外部サーバーに送信することは一切ありません。すべてのAI処理はユーザーのデバイス上で実行されます。</p>
+  <p data-i18n="privacy.p1">本アプリは、スクリーンショットの文字認識（OCR）をデバイス上で行い、抽出されたテキストのみを暗号化通信でクラウドAIに送信して分析を行います。スクリーンショット画像そのものがサーバーに送信されることはありません。送信されたテキストは分析完了後にサーバーから即時削除され、AIの学習にも一切使用されません。</p>
 
-  <h2 data-i18n="privacy.h2">2. 取り扱う情報</h2>
-  <p data-i18n="privacy.p2">本アプリがデバイス上で処理する情報は以下の通りです。これらはすべてユーザーのデバイス内にのみ保存されます。</p>
+  <h2 data-i18n="privacy.h2">2. 収集する情報</h2>
+  <p data-i18n="privacy.p2">本アプリが取り扱う情報は以下の通りです。</p>
   <ul>
-    <li data-i18n="privacy.p2.li1">ユーザーが入力したスクリーンショット画像</li>
-    <li data-i18n="privacy.p2.li2">ユーザーが入力したテキスト情報（補足メモ等）</li>
-    <li data-i18n="privacy.p2.li3">AI分析結果</li>
+    <li data-i18n="privacy.p2.li1">スクリーンショット画像（デバイス上でのみ処理。サーバーには送信されません）</li>
+    <li data-i18n="privacy.p2.li2">OCRで抽出されたテキスト（暗号化通信でクラウドAIに送信。分析後即時削除）</li>
+    <li data-i18n="privacy.p2.li3">AI分析結果（デバイス内に保存）</li>
     <li data-i18n="privacy.p2.li4">アプリ内課金に関する情報（Apple経由で処理）</li>
+    <li data-i18n="privacy.p2.li5">匿名のデバイス識別子（認証・使用量管理に使用。個人情報とは紐付けられません）</li>
+    <li data-i18n="privacy.p2.li6">広告識別子（IDFA）：App Tracking Transparency（ATT）を通じて取得（無料プランのみ）</li>
+    <li data-i18n="privacy.p2.li7">クラッシュ診断データ：エラーログ、デバイス情報、アプリ状態（匿名処理。Firebase Crashlytics経由）</li>
+  </ul>
+
+  <p data-i18n="privacy.p2b">以下の情報は収集されません。</p>
+  <ul>
+    <li data-i18n="privacy.p2b.li1">氏名、メールアドレス、電話番号などの個人情報</li>
+    <li data-i18n="privacy.p2b.li2">スクリーンショット画像そのもの（サーバーには送信されません）</li>
+    <li data-i18n="privacy.p2b.li3">分析結果のテキスト（デバイス内のみ保存）</li>
   </ul>
 
   <h2 data-i18n="privacy.h3">3. 情報の利用目的</h2>
-  <p data-i18n="privacy.p3">上記の情報は、オンデバイスでのAI分析処理のみに使用されます。</p>
+  <p data-i18n="privacy.p3">上記の情報は、AI分析処理および使用量管理のみに使用されます。マーケティングや第三者への提供の目的では使用しません。</p>
 
   <h2 data-i18n="privacy.h4">4. 第三者への提供</h2>
-  <p data-i18n="privacy.p4">本アプリはユーザーの情報を第三者に提供しません。外部サーバーへのデータ送信は一切行いません。</p>
+  <p data-i18n="privacy.p4">本アプリはユーザーの個人情報を第三者に提供しません。AI分析にはAmazon Web Services（AWS）のインフラを利用しますが、送信されたテキストは分析完了後にサーバーから即時削除され、AIの学習データとして使用されることはありません。</p>
 
   <h2 data-i18n="privacy.h5">5. データの保管</h2>
-  <p data-i18n="privacy.p5">すべてのデータはユーザーのデバイス内にのみ保存されます。クラウドへのバックアップは行いません。</p>
+  <p data-i18n="privacy.p5">分析結果・スクリーンショット・設定情報はユーザーのデバイス内にのみ保存されます。サーバー上の使用量データは匿名であり、7日間のTTL（有効期限）で自動削除されます。</p>
 
   <h2 data-i18n="privacy.h6">6. データの削除</h2>
-  <p data-i18n="privacy.p6">アプリを削除することで、本アプリに関連するすべてのデータが削除されます。また、アプリ内の設定からデータを個別に削除することも可能です。</p>
+  <p data-i18n="privacy.p6">アプリを削除することで、デバイス内のすべてのデータが削除されます。サーバー上の匿名使用量データは7日以内に自動削除されます。</p>
 
   <h2 data-i18n="privacy.h7">7. App Store プライバシー</h2>
   <ul>
-    <li data-i18n="privacy.p7.li1">Data Not Collected: 本アプリはユーザーデータを収集しません</li>
-    <li data-i18n="privacy.p7.li2">Data Not Linked to You: データはユーザーに紐付けられません</li>
+    <li data-i18n="privacy.p7.li1">Data Not Linked to You: 収集されるデータはユーザーの個人情報に紐付けられません</li>
+    <li data-i18n="privacy.p7.li2">Usage Data: 匿名の使用量データが分析回数管理に使用されます</li>
   </ul>
 
-  <h2 data-i18n="privacy.h8">8. お子様のプライバシー</h2>
-  <p data-i18n="privacy.p8">本アプリは17歳以上を対象としています。17歳未満のお子様からの情報を意図的に収集することはありません。</p>
+  <h2 data-i18n="privacy.h8">8. 第三者サービス</h2>
+  <p data-i18n="privacy.p8">本アプリでは以下の第三者サービスを利用しています。</p>
+  <ul>
+    <li data-i18n="privacy.p8.li1">Google AdMob（広告配信）：無料プランでの広告表示に使用</li>
+    <li data-i18n="privacy.p8.li2">Firebase Crashlytics（クラッシュレポート）：アプリの安定性向上のため匿名のクラッシュ情報を収集</li>
+    <li data-i18n="privacy.p8.li3">Apple StoreKit（アプリ内課金）：サブスクリプションの処理に使用</li>
+    <li data-i18n="privacy.p8.li4">Amazon Web Services（クラウドAI分析）：テキスト分析の処理に使用。分析後即時削除</li>
+  </ul>
 
-  <h2 data-i18n="privacy.h9">9. ポリシーの変更</h2>
-  <p data-i18n="privacy.p9">本ポリシーは予告なく変更される場合があります。変更がある場合は、本ページにて更新いたします。</p>
+  <h2 data-i18n="privacy.h9">9. 広告について</h2>
+  <p data-i18n="privacy.p9">無料プランでは広告が表示されます。広告配信にはGoogle AdMobを使用し、Appleの App Tracking Transparency（ATT）フレームワークに準拠します。有料プラン（スタンダード・プレミアム）では広告は一切表示されません。</p>
 
-  <h2 data-i18n="privacy.h10">10. お問い合わせ</h2>
-  <p data-i18n="privacy.p10">プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
-  <p><a href="mailto:support@relora.app">support@relora.app</a></p>
+  <h2 data-i18n="privacy.h10">10. お子様のプライバシー</h2>
+  <p data-i18n="privacy.p10">本アプリは17歳以上を対象としています。17歳未満のお子様からの情報を意図的に収集することはありません。</p>
+
+  <h2 data-i18n="privacy.h11">11. ポリシーの変更</h2>
+  <p data-i18n="privacy.p11">本ポリシーは予告なく変更される場合があります。変更がある場合は、本ページにて更新いたします。</p>
+
+  <h2 data-i18n="privacy.h12">12. お問い合わせ</h2>
+  <p data-i18n="privacy.p12">プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
+  <p><a href="mailto:naoki.2002.01.01@gmail.com">naoki.2002.01.01@gmail.com</a></p>
 </div>
 
 <footer class="footer">
